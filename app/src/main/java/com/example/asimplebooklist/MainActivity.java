@@ -27,4 +27,8 @@ public class MainActivity extends AppCompatActivity {
         adapter = new RecyclerAdapter();
         recyclerView.setAdapter(adapter);
     }
+
+    private void getData() {
+        
+    }
 }
