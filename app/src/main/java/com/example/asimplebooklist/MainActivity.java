@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -38,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         List<String> listRate = Arrays.asList("Rate1", "Rate2", "Rate3" ,"Rate4", "Rate5", "Rate6", "Rate7", "Rate8", "Rate9", "Rate10");
         List<Integer> listResId = Arrays.asList(R.drawable.booksample, R.drawable.booksample2, R.drawable.booksample3, R.drawable.booksample4, R.drawable.booksample5, R.drawable.booksample6, R.drawable.booksample, R.drawable.booksample2, R.drawable.booksample3, R.drawable.booksample4);
 
+        List<BookData> books = new ArrayList<>();
+        books.add(new BookData("Book1", 1, R.drawable.booksample));
         for (int i = 0; i < listTitle.size(); i++) {
             BookData data = new BookData();
             data.setTitle(listTitle.get(i));

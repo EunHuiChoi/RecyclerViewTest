@@ -6,6 +6,11 @@ public class BookData {
     private String title;
     private String rate;
 
+    public BookData(String title, Integer rating, Integer img )
+    {
+        this.title = title;
+    }
+
     public int getResId() {
         return resId;
     }
